@@ -18,13 +18,14 @@ s|^(seeds[[:space:]]+=[[:space:]]+).*$|\1\"\"|" $HOME/.stride/config/config.toml
 strided tendermint unsafe-reset-all --home $HOME/.stride --keep-addr-book
 sudo systemctl restart strided && journalctl -u strided -f -o cat
 ```
-# After you fully synced, you can take away RPC from persistent peers. 
-In case if it falls off or will be switch off.  
+# Clear persistent peers 
+After you fully synced, you can take away RPC from persistent peers. In case if it falls off or will be switch off.    
 ```bash
 peers=""
 sed -i.bak -e "s/^persistent_peers *=.*/persistent_peers = \"$peers\"/" $HOME/.stride/config/config.toml
 ```
 # Switch off snapshot 
+and restart
 ```bash
 sed -i.bak -E "s|^(enable[[:space:]]+=[[:space:]]+).*$|\1false| ; \
 s|^(seeds[[:space:]]+=[[:space:]]+).*$|\1\"\"|" $HOME/.stride/config/config.toml
