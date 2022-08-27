@@ -1,4 +1,6 @@
-``peers="f0ba7861df46dee6cdf5026bcb4ffa16a660ac44@62.171.144.51:31656"
+# StateSync STRIDE
+```bash
+peers="f0ba7861df46dee6cdf5026bcb4ffa16a660ac44@62.171.144.51:31656"
 sed -i.bak -e "s/^persistent_peers *=.*/persistent_peers = \"$peers\"/" $HOME/.stride/config/config.toml
 
 SNAP_RPC=62.171.144.51:31657
@@ -12,4 +14,5 @@ s|^(trust_height[[:space:]]+=[[:space:]]+).*$|\1$BLOCK_HEIGHT| ; \
 s|^(trust_hash[[:space:]]+=[[:space:]]+).*$|\1\"$TRUST_HASH\"| ; \
 s|^(seeds[[:space:]]+=[[:space:]]+).*$|\1\"\"|" $HOME/.stride/config/config.toml
 strided tendermint unsafe-reset-all --home $HOME/.stride --keep-addr-book
-sudo systemctl restart strided && journalctl -u strided -f -o cat``
+sudo systemctl restart strided && journalctl -u strided -f -o cat
+```
