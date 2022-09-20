@@ -57,6 +57,14 @@ sed -i.bak -e "s/^seeds *=.*/seeds = \"$SEEDS\"/; s/^persistent_peers *=.*/persi
 sudo systemctl restart kyved && sudo journalctl -u kyved -f -o cat
 ```
 
+
+
+
+
+
+
+
+
 # StateSync
 
 ```bash
