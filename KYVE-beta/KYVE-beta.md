@@ -1,4 +1,4 @@
-# Snapshots-SateSync
+# Snapshots-StateSync
 ```bash
 peers="67a2cec5e11f59dca3df5d33e0dcd1983dbb9244@62.171.144.51:21656"
 sed -i.bak -e "s/^persistent_peers *=.*/persistent_peers = \"$peers\"/" $HOME/.kyve/config/config.toml
