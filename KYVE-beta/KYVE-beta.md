@@ -57,14 +57,7 @@ sed -i.bak -e "s/^seeds *=.*/seeds = \"$SEEDS\"/; s/^persistent_peers *=.*/persi
 sudo systemctl restart kyved && sudo journalctl -u kyved -f -o cat
 ```
 
-
-
-
 #
-
-
-
-
 # StateSync
 
 ```bash
@@ -92,8 +85,7 @@ After you fully synced, you can take away RPC from persistent peers. In case if 
 peers=""
 sed -i.bak -e "s/^persistent_peers *=.*/persistent_peers = \"$peers\"/" $HOME/.kyve/config/config.toml
 ```
-### Switch off state sync  
-and restart
+### Switch off state sync and restart
 ```bash
 sed -i.bak -E "s|^(enable[[:space:]]+=[[:space:]]+).*$|\1false| ; \
 s|^(seeds[[:space:]]+=[[:space:]]+).*$|\1\"\"|" $HOME/.kyve/config/config.toml
