@@ -22,12 +22,12 @@ sed -i -e "s/^pruning-interval *=.*/pruning-interval = \"$pruning_interval\"/" $
 rm -rf $HOME/.kyve/data/
 mkdir $HOME/.kyve/data/
 cd $HOME
-wget http://62.171.144.51:8000/kywedata.tar.gz
+wget http://62.171.144.51:8000/kyvedata.tar.gz
 ```
 ### Unpack and move archive
 
 ```bash
-tar -C $HOME/ -zxvf kywedata.tar.gz --strip-components 1
+tar -C $HOME/ -zxvf kyvedata.tar.gz --strip-components 1
 mv $HOME/kolot/.kyve/data $HOME/.kyve
 ```
 
@@ -35,7 +35,7 @@ mv $HOME/kolot/.kyve/data $HOME/.kyve
 
 ```bash
 cd $HOME
-rm kywedata.tar.gz
+rm kyvedata.tar.gz
 ```
 
 ### Start node
