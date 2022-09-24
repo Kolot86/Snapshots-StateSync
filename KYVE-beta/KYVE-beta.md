@@ -1,4 +1,4 @@
-# Snapshots-StateSync
+# Snapshots-StateSync (not working now use state sync)
 
 # 13GB Snapshot 2022-09-20
 
