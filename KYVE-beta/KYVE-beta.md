@@ -1,6 +1,6 @@
 # Snapshots-StateSync (not working now use state sync)
 
-# 13GB Snapshot 2022-09-20
+# 20GB Snapshot 2022-09-24
 
 ### Stop node and tune pruning
 ```bash
