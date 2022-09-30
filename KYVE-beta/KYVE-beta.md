@@ -1,4 +1,4 @@
-# Snapshots-StateSync 
+# StateSync 
 
 ## If you have used my guide to install chain node then you can use state sync without change 
 # Instlall latest binaries
