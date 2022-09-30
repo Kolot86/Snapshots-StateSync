@@ -6,7 +6,7 @@
 ```bash
 sudo systemctl stop kyved
 ```
-## Download latest binaries 
+## Download latest binaries (beta 5)
 ```bash
 cd $HOME
 wget http://62.171.144.51:8000/kyvechaind.tar.gz
