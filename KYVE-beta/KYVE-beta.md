@@ -28,7 +28,9 @@ rm -rf kyvechaind.tar.gz kolot
 
 #
 # StateSync
-
+```bash
+sed -i.bak -e "s/^snapshot-interval *=.*/snapshot-interval = \"2000\"/" $HOME/.kyve/config/app.toml
+```
 ```bash
 peers="67a2cec5e11f59dca3df5d33e0dcd1983dbb9244@62.171.144.51:21656"
 sed -i.bak -e "s/^persistent_peers *=.*/persistent_peers = \"$peers\"/" $HOME/.kyve/config/config.toml
