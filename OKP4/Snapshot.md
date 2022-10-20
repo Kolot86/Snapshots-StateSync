@@ -45,7 +45,7 @@ sudo systemctl restart okp4d && sudo journalctl -u okp4d -f -o cat
 ## Addresbook 
 
 ```bash
-
+wget -O $HOME/.okp4d/config/addrbook.json "https://raw.githubusercontent.com/Kolot86/Snapshots-SateSync/main/OKP4/addrbook.json"
 ```
 ## Restart 
 
