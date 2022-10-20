@@ -17,7 +17,7 @@ sed -i -e "s/^pruning-interval *=.*/pruning-interval = \"$pruning_interval\"/" $
 
 ```bash
 cd $HOME/.okp4d
-rm -rf data wasm
+sudo rm -rf data wasm
 ```
 
 ## Download archive
