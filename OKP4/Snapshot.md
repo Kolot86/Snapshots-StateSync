@@ -39,7 +39,7 @@ mv $HOME/kolot/snap/wasm  $HOME/.okp4d
 
 ```bash
 cd $HOME
-rm -rf okp4data.tar.gz kolot
+sudo rm -rf okp4data.tar.gz kolot
 ```
 ## Add addresbook if needed 
 
