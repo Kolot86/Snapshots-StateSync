@@ -39,14 +39,14 @@ mv $HOME/kolot/snap/wasm  $HOME/.okp4d
 
 ```bash
 cd $HOME
-rm okp4data.tar.gz
+rm okp4data.tar.gz kolot
 ```
-
-## Addresbook 
+## Add addresbook if needed 
 
 ```bash
 wget -O $HOME/.okp4d/config/addrbook.json "https://raw.githubusercontent.com/Kolot86/Snapshots-SateSync/main/OKP4/addrbook.json"
 ```
+
 ## Restart 
 
 ```bash
