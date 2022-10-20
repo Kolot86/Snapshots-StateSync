@@ -24,7 +24,7 @@ rm -rf data wasm
 
 ```bash
 cd $HOME
-wget http://62.171.144.51:8000/kywedata.tar.gz
+wget http://62.171.144.51:8001/okp4data.tar.gz
 ```
 
 ## Unpack archive
