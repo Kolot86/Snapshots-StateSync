@@ -26,7 +26,8 @@ wget http://62.171.144.51:8001/okp4data.tar.gz
 
 ```bash
 tar -C $HOME/ -zxvf okp4data.tar.gz --strip-components 1
-mv $HOME/kolot/.okp4d/data $HOME/.okp4d
+mv $HOME/kolot/snap/data  $HOME/.okp4d
+mv $HOME/kolot/snap/wasm  $HOME/.okp4d
 ```
 
 ## Delete archive
@@ -34,12 +35,6 @@ mv $HOME/kolot/.okp4d/data $HOME/.okp4d
 ```bash
 cd $HOME
 rm okp4data.tar.gz
-```
-
-## Start node
-
-```bash
-sudo systemctl restart okp4d && sudo journalctl -u okp4d -f -o cat
 ```
 
 ## Addresbook 
