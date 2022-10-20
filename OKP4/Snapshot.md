@@ -3,7 +3,7 @@
 ## Stop node and tune pruning
 ```bash
 sudo systemctl stop okp4d
-chaind tendermint unsafe-reset-all --home $HOME/.okp4d --keep-addr-book
+okp4d tendermint unsafe-reset-all --home $HOME/.okp4d --keep-addr-book
 pruning="custom"
 pruning_keep_recent="100"
 pruning_keep_every="0"
