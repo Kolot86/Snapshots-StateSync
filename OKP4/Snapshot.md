@@ -13,15 +13,20 @@ sed -i -e "s/^pruning-keep-recent *=.*/pruning-keep-recent = \"$pruning_keep_rec
 sed -i -e "s/^pruning-keep-every *=.*/pruning-keep-every = \"$pruning_keep_every\"/" $HOME/.okp4d/config/app.toml
 sed -i -e "s/^pruning-interval *=.*/pruning-interval = \"$pruning_interval\"/" $HOME/.okp4d/config/app.toml
 ```
+## Delete old data
+
+```bash
+cd $HOME/.okp4d
+rm -rf data wasm
+```
 
 ## Download archive
 
 ```bash
-sudo rm -rf $HOME/.okp4d/data wasm
-mkdir $HOME/.okp4d/data/
 cd $HOME
-wget http://62.171.144.51:8001/okp4data.tar.gz
+wget http://62.171.144.51:8000/kywedata.tar.gz
 ```
+
 ## Unpack archive
 
 ```bash
@@ -48,23 +53,4 @@ wget -O $HOME/.okp4d/config/addrbook.json "https://raw.githubusercontent.com/Kol
 sudo systemctl restart okp4d && sudo journalctl -u okp4d -f -o cat
 ```
 
-## Download archive
-```bash
-sudo systemctl stop okp4d
-```
-```bash
-cd $HOME
-wget http://62.171.144.51:8000/okp4dchaind.tar.gz
-```
-## Unpack archive
 
-```bash
-tar -C $HOME/ -zxvf okp4dchaind.tar.gz --strip-components 1
-mv $HOME/kolot/chaind/chaind $HOME/.okp4d/cosmovisor/genesis/bin/chaind
-```
-
-## Delete archive
-
-```bash
-cd $HOME
-rm -rf okp4dchaind.tar.gz kolot
