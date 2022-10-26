@@ -6,23 +6,23 @@
 ```bash
 sudo systemctl stop kyved
 ```
-## Download latest binaries (beta 5)
+## Download latest binaries (beta 7)
 ```bash
 cd $HOME
-wget http://62.171.144.51:8000/kyvechaind.tar.gz
+wget https://kyve-beta.s3.eu-central-1.amazonaws.com/v0.7.0_beta7/chain_linux_amd64.tar.gz
 ```
 ## Unpack archive
 
 ```bash
-tar -C $HOME/ -zxvf kyvechaind.tar.gz --strip-components 1
-mv $HOME/kolot/chaind/chaind $HOME/.kyve/cosmovisor/genesis/bin/chaind
+tar -xvzf chain_linux_amd64.tar.gz
+mv chaind $HOME/.kyve/cosmovisor/genesis/bin/chaind
 ```
 
 ## Delete archive
 
 ```bash
 cd $HOME
-rm -rf kyvechaind.tar.gz kolot
+rm -rf chain_linux_amd64.tar.gz
 ```
 
 
