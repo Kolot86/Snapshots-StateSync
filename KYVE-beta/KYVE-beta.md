@@ -72,7 +72,7 @@ sed -i.bak -e "s/^seeds *=.*/seeds = \"$SEEDS\"/; s/^persistent_peers *=.*/persi
 ```bash
 wget -O $HOME/.kyve/config/addrbook.json "https://raw.githubusercontent.com/Kolot86/Snapshots-SateSync/main/KYVE-beta/addrbook.json"
 ```
-
+## Restart
 ```bash
 sudo systemctl restart kyved && sudo journalctl -u kyved -f -o cat
 ```
