@@ -9,7 +9,7 @@ sudo systemctl stop kyved
 ## Download latest binaries (beta 7)
 ```bash
 cd $HOME
-wget https://kyve-beta.s3.eu-central-1.amazonaws.com/v0.7.0_beta7/chain_linux_amd64.tar.gz
+wget https://kyve-beta.s3.eu-central-1.amazonaws.com/v0.7.0_beta7_v2/chain_linux_amd64.tar.gz
 ```
 ## Unpack archive
 
