@@ -51,11 +51,6 @@ sudo sudo chmod +x $(which chaind)
 cp /usr/local/bin/chaind $HOME/.kyve/cosmovisor/genesis/bin/chaind
 ```
 
-## Start node
-
-```bash
-sudo systemctl restart kyved && sudo journalctl -u kyved -f -o cat
-```
 ## Add addresbook
 
 ```bash
