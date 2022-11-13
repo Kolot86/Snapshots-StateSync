@@ -18,8 +18,8 @@ sed -i -e "s/^pruning-interval *=.*/pruning-interval = \"$pruning_interval\"/" $
 ## Download archive
 
 ```bash
-sudo rm -rf $HOME/.kyve/data/
 cd $HOME
+sudo rm -rf $HOME/.kyve/data/
 wget http://62.171.144.51:8000/kyvedata.tar.gz
 ```
 ## Unpack archive
