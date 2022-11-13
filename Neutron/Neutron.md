@@ -44,7 +44,7 @@ sudo rm -rf neutrondata.tar.gz kolot
 ## Add addresbook
 
 ```bash
-wget -O $HOME/.neutrond/config/addrbook.json "https://raw.githubusercontent.com/Kolot86/Snapshots-SateSync/main/OKP4/addrbook.json"
+wget -O $HOME/.neutrond/config/addrbook.json "https://raw.githubusercontent.com/Kolot86/Snapshots-StateSync/main/Neutron/addrbook.json"
 ```
 
 ## Restart 
