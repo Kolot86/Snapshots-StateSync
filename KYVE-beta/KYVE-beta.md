@@ -48,6 +48,7 @@ sudo sudo chmod +x $(which chaind)
 ## Copy binaries to cosmovisor 
 
 ```bash
+cd $HOME
 cp /usr/local/bin/chaind $HOME/.kyve/cosmovisor/genesis/bin/chaind
 ```
 
