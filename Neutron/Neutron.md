@@ -1,4 +1,4 @@
-## 236mb Snapshot 2022-11-19
+## 340mb Snapshot 2022-11-22
 
 ## Stop node and tune pruning
 ```bash
