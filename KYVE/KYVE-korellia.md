@@ -55,7 +55,7 @@ cp /usr/local/bin/kyved $HOME/.kyve/cosmovisor/genesis/bin/kyved
 ## Add addresbook
 
 ```bash
-wget -O $HOME/.kyve/config/addrbook.json "https://raw.githubusercontent.com/Kolot86/Snapshots-SateSync/main/KYVE-beta/addrbook.json"
+wget -O $HOME/.kyve/config/addrbook.json "https://raw.githubusercontent.com/Kolot86/Snapshots-StateSync/main/KYVE/addrbook.json"
 ```
 
 ## Restart 
