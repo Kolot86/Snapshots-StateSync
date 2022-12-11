@@ -2,6 +2,7 @@
 ## 782MB Snapshot 2022-12-11
 
 ## Stop node and tune pruning
+(Pay attention that the binary file is called kyved in case if you have used chaind, adjust commands)
 ```bash
 sudo systemctl stop kyved
 kyved tendermint unsafe-reset-all --home $HOME/.kyve --keep-addr-book
