@@ -4,7 +4,7 @@
 ## Stop node and tune pruning
 ```bash
 sudo systemctl stop kyved
-chaind tendermint unsafe-reset-all --home $HOME/.kyve --keep-addr-book
+kyved tendermint unsafe-reset-all --home $HOME/.kyve --keep-addr-book
 pruning="custom"
 pruning_keep_recent="100"
 pruning_keep_every="0"
@@ -38,18 +38,18 @@ sudo rm -rf kyvedata.tar.gz kolot
 ## Update your binaries if needed 
 
 ```bash
-cd $HOME
-wget https://kyve-beta.s3.eu-central-1.amazonaws.com/v0.7.0_beta8/kyved_linux_amd64.tar.gz
-tar -xvzf kyved_linux_amd64.tar.gz
-sudo mv kyved /usr/local/bin/chaind
-sudo sudo chmod +x $(which chaind)
+cd $HOME && \
+wget https://kyve-korellia.s3.eu-central-1.amazonaws.com/v0.7.0/kyved_linux_amd64.tar.gz && \
+tar -xvzf kyved_linux_amd64.tar.gz && \
+sudo mv kyved /usr/local/bin/kyved && \
+chmod +x $(which kyved)
 ```
 
-## Copy binaries to cosmovisor 
+## Copy binaries to cosmovisor if you use cosmovisor 
 
 ```bash
 cd $HOME
-cp /usr/local/bin/chaind $HOME/.kyve/cosmovisor/genesis/bin/chaind
+cp /usr/local/bin/kyved $HOME/.kyve/cosmovisor/genesis/bin/kyved
 ```
 
 ## Add addresbook
