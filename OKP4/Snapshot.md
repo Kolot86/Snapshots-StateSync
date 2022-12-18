@@ -1,5 +1,5 @@
 # Not suported till next phase 
-## 22gb Snapshot 2022-11-19
+## 88MB Snapshot 2022-12-18
 
 ## Stop node and tune pruning
 ```bash
