@@ -1,4 +1,4 @@
-# Not suported till next phase 
+
 ## 88MB Snapshot 2022-12-18
 
 ## Stop node and tune pruning
