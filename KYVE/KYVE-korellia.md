@@ -1,5 +1,5 @@
 # Snapshot 
-## 961MB Snapshot 2022-12-24
+## 815MB Snapshot 2022-12-27
 
 ## Stop node and tune pruning
 (Pay attention that the binary file is called kyved in case if you have used chaind, adjust commands)
