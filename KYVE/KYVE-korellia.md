@@ -40,9 +40,9 @@ sudo rm -rf kyvedata.tar.gz kolot
 
 ```bash
 cd $HOME && \
-wget https://kyve-korellia.s3.eu-central-1.amazonaws.com/v0.7.0/kyved_linux_amd64.tar.gz && \
+wget https://kyve-korellia.s3.eu-central-1.amazonaws.com/v0.8.0/kyved_linux_amd64.tar.gz && \
 tar -xvzf kyved_linux_amd64.tar.gz && \
-sudo mv kyved /usr/local/bin/kyved && \
+sudo mv chaind /usr/local/bin/kyved && \
 chmod +x $(which kyved)
 ```
 
