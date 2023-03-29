@@ -1,4 +1,4 @@
-# Snapshot 
+# Snapshot (Not supported)
 ## 937MB Snapshot 2023-02-04
 
 ## Stop node and tune pruning
